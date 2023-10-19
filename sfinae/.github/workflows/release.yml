@@ -3,7 +3,7 @@ name: 'ups'
 on:
   push:
     branches:
-      - sfinae/sfinae
+      - new/sfinae
       - feature/github_actions
   workflow_dispatch:
 jobs:
