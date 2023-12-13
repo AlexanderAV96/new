@@ -17,7 +17,7 @@ struct is_same<T , T> : std::true_type { };
 
 
 template < class T >
-void print( T & arg , typename std::enable_if< std::is_same< T , int8_t >::value || std::is_same< T , int16_t >::value || std::is_same< T , int32_t >::value  || std::is_same< T , int64_t >::value >::type* = {} )
+void print( T & arg , typename std::enable_if < std::is_integral<T>::value >::type* = {} )
 {
 	
 	
