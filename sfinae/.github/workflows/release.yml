@@ -5,8 +5,11 @@ on:
     branches:
       - master
       - feature/github_actions
+on:
+  push:
     paths:
-      - master/sfinae/github_actions
+      - sfinae/
+
   workflow_dispatch:
 jobs:
   build:
